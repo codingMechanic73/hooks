@@ -23,6 +23,15 @@ export default function Index() {
             useDebouncePage
           </Link>
         </li>
+        <li className="text-blue-500 font-bold">
+          <Link
+            className="hover:underline"
+            prefetch="intent"
+            to={'/useLocalStoragePage'}
+          >
+            useLocalStoragePage
+          </Link>
+        </li>
       </ol>
     </div>
   );

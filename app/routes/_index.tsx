@@ -41,6 +41,15 @@ export default function Index() {
             useLocalStorageExternalPage
           </Link>
         </li>
+        <li className="text-blue-500 font-bold">
+          <Link
+            className="hover:underline"
+            prefetch="intent"
+            to={'/useWindowSizePage'}
+          >
+            useWindowSizePage
+          </Link>
+        </li>
       </ol>
     </div>
   );

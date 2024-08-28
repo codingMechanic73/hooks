@@ -53,7 +53,8 @@
   },
   "lint-staged": {
     "**/*.{ts,tsx}": [
-      "eslint"
+      "eslint",
+      "vitest related --run"
     ],
     "**/*.{ts,tsx,json,yaml,md,cjs,css}": [
       "prettier --write"

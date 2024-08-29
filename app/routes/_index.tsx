@@ -50,6 +50,15 @@ export default function Index() {
             useWindowSizePage
           </Link>
         </li>
+        <li className="text-blue-500 font-bold">
+          <Link
+            className="hover:underline"
+            prefetch="intent"
+            to={'/useWindowSizeSimplePage'}
+          >
+            useWindowSizeSimplePage
+          </Link>
+        </li>
       </ol>
     </div>
   );

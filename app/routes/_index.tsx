@@ -59,6 +59,15 @@ export default function Index() {
             useWindowSizeSimplePage
           </Link>
         </li>
+        <li className="text-blue-500 font-bold">
+          <Link
+            className="hover:underline"
+            prefetch="intent"
+            to={'/usePreviousPage'}
+          >
+            usePreviousPage
+          </Link>
+        </li>
       </ol>
     </div>
   );

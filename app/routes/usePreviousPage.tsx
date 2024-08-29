@@ -11,7 +11,7 @@ export default function usePreviousPage() {
 
   return (
     <div className="h-[100vh] w-100 flex flex-col items-center justify-center">
-      <h1 className="text-3xl p-5 font-bold">useDebounce Hook</h1>
+      <h1 className="text-3xl p-5 font-bold">usePrevious Hook</h1>
       <div className="w-full max-w-xs">
         <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
           <div className="mb-4">

@@ -5,7 +5,7 @@ export async function loader() {
   return null;
 }
 
-export default function UseDebouncePage() {
+export default function UseLocalStoragePage() {
   const key = 'searchTerm';
   const [searchTerm, setSearchTerm] = useLocalStorage<string>(key, '');
 

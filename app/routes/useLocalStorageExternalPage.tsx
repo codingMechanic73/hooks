@@ -1,17 +1,17 @@
 import { ClientOnly } from 'remix-utils/client-only';
-import useLocalStorage from '~/hooks/useLocalStorage';
+import useLocalStorageExternal from '~/hooks/useLocalStorageExternal';
 
 export async function loader() {
   return null;
 }
 
-export default function UseDebouncePage() {
+export default function UseLocalStoragePage() {
   const key = 'searchTerm';
-  const [searchTerm, setSearchTerm] = useLocalStorage<string>(key, '');
+  const [searchTerm, setSearchTerm] = useLocalStorageExternal<string>(key, '');
 
   return (
     <div className="h-[100vh] w-100 flex flex-col items-center justify-center">
-      <h1 className="text-3xl p-5 font-bold">useLocalStorage Hook</h1>
+      <h1 className="text-3xl p-5 font-bold">useLocalStorage External Hook</h1>
       <div className="w-full max-w-xs">
         <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
           <div className="mb-4 flex flex-col justify-center align-middle">
